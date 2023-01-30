@@ -1,17 +1,20 @@
 package com.driver;
 
-public class Movie {
+import java.util.List;
 
+public class Movie {
     private String name;
-    private int durationMinutes;
+    private int durationInMinutes;
     private double imdbRating;
 
-    public Movie() {
+
+    public Movie(){
+
     }
 
-    public Movie(String name, int durationMinutes, double imdbRating) {
+    public Movie(String name, int durationInMinutes, double imdbRating){
         this.name = name;
-        this.durationMinutes = durationMinutes;
+        this.durationInMinutes = durationInMinutes;
         this.imdbRating = imdbRating;
     }
 
@@ -23,12 +26,12 @@ public class Movie {
         this.name = name;
     }
 
-    public int getDurationMinutes() {
-        return durationMinutes;
+    public int getDurationInMinutes() {
+        return durationInMinutes;
     }
 
-    public void setDurationMinutes(int durationMinutes) {
-        this.durationMinutes = durationMinutes;
+    public void setDurationInMinutes(int durationInMinutes) {
+        this.durationInMinutes = durationInMinutes;
     }
 
     public double getImdbRating() {

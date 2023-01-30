@@ -1,18 +1,22 @@
 package com.driver;
 
-public class Director {
+import java.util.ArrayList;
+import java.util.List;
 
+public class Director {
     private String name;
     private int numberOfMovies;
     private double imdbRating;
 
-    public Director() {
+
+    public Director(){
+
     }
 
-    public Director(String name, int numberOfMovies, double imdbRating) {
+    public Director(String name, int numberOfMovies, double imdbrating) {
         this.name = name;
         this.numberOfMovies = numberOfMovies;
-        this.imdbRating = imdbRating;
+        this.imdbRating = imdbrating;
     }
 
     public String getName() {
@@ -35,7 +39,8 @@ public class Director {
         return imdbRating;
     }
 
-    public void setImdbRating(double imdbRating) {
-        this.imdbRating = imdbRating;
+    public void setImdbRating(double imdbrating) {
+        this.imdbRating = imdbrating;
     }
+
 }
